@@ -1,3 +1,5 @@
+package Semana_1.Ejercicios;
+
 public class Pato {
 
     String name;
