@@ -16,7 +16,7 @@ public class Ejecicio_1 {
 
         //TODO: Usando String.format()
         String mensaje2 = String.format(
-                "Me llamo %s, tengo %d anios, mido %.2fm y estoy %s.",
+                "Me llamo %s, tengo %d anios, mido %.2f m y estoy %s.",
                 nombre, edad, altura, esActivo ? "activo" : "inactivo"
         );
         System.out.println(mensaje2);
