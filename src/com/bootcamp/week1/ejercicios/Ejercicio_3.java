@@ -1,7 +1,6 @@
 package com.bootcamp.week1.ejercicios;
 
 public class Ejercicio_3 {
-
     public static void clasificar(int[] numeros) {
         int positivos = 0, negativos = 0, ceros = 0;
         int pares = 0, impares = 0;
