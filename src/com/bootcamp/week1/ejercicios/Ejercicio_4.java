@@ -53,4 +53,3 @@ public class Ejercicio_4 {
         System.out.println(construirPiramide(5));
     }
 }
-
