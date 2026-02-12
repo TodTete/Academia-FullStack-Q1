@@ -19,13 +19,12 @@ public class Ejercicio_3 {
             }
 
             //TODO: clasificar par / impar
-            if(num != 0 ) {
                 if (num % 2 == 0) {
                     pares++;
                 } else {
                     impares++;
                 }
-            }
+            
 
             //TODO: actualizar mayor y menor
             if(num > mayor){
