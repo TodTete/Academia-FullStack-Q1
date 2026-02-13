@@ -1,11 +1,11 @@
 package com.bootcamp.week1;
-
+/*
 import java.time.LocalDate;
 import java.util.Scanner;
 
 public class StudentCard {
 
-    static void main() {
+    public static void main() {
         Scanner in = new Scanner(System.in);
         String name, favLanguage; //Variable para almacenar el nombre y el lenguaje favorito
         int age; //Variable para almacenar la edad
@@ -40,3 +40,4 @@ public class StudentCard {
         System.out.println("*".repeat(width));
     }
 }
+    */
