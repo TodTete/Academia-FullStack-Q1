@@ -1,5 +1,5 @@
 package com.bootcamp.week1;
-/*
+
 import java.time.LocalDate;
 import java.util.Scanner;
 
@@ -40,4 +40,4 @@ public class StudentCard {
         System.out.println("*".repeat(width));
     }
 }
-    */
+
