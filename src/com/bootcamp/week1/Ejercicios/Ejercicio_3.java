@@ -1,4 +1,4 @@
-package com.bootcamp.week1.ejercicios;
+package com.bootcamp.week1.Ejercicios;
 
 public class Ejercicio_3 {
     public static void clasificar(int[] numeros) {

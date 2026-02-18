@@ -1,4 +1,4 @@
-package com.bootcamp.week1.ejercicios;
+package com.bootcamp.week1.Ejercicios;
 import java.util.ArrayList;
 
 interface Arrancable{

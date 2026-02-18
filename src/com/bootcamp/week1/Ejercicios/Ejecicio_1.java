@@ -1,4 +1,4 @@
-package com.bootcamp.week1.ejercicios;
+package com.bootcamp.week1.Ejercicios;
 //Date: 11-02-2026
 public class Ejecicio_1 {
     public static void main(String[] args){
