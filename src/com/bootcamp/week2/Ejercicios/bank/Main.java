@@ -2,8 +2,8 @@ package com.bootcamp.week2.Ejercicios.bank;
 
 public class Main {
         public static void main(String[] args){
-            BanckAccount cuenta1 = new BankAccount(1000.00);
-            BanckAccount cuenta2 = new BankAccount(1000.00);
+            BankAccount cuenta1 = new BankAccount(1000.00);
+            BankAccount cuenta2 = new BankAccount(500.00);
             // Operaciones validas
             try {
                 cuenta1.deposit(500);
@@ -36,5 +36,5 @@ public class Main {
                         e.getMessage(), e.getDeficit());
             }
         }
-    }
 }
+
