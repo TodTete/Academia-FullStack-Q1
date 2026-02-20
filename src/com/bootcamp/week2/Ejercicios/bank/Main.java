@@ -1,25 +1,40 @@
 package com.bootcamp.week2.Ejercicios.bank;
 
 public class Main {
-    public static void main(String[] args) {
+        public static void main(String[] args){
+            BanckAccount cuenta1 = new BankAccount(1000.00);
+            BanckAccount cuenta2 = new BankAccount(1000.00);
+            // Operaciones validas
+            try {
+                cuenta1.deposit(500);
+                System.out.printf("Deposito exitoso. Saldo: $%.2f%n", cuenta1.getBalance());
 
-        BankAccount acc1 = new BankAccount(500);
-        BankAccount acc2 = new BankAccount(200);
+                cuenta1.withdraw(200);
+                System.out.printf("Retiro exitoso. Saldo: $%.2f%n", cuenta1.getBalance());
 
-        acc1.deposit(150);
+                cuenta1.transfer(cuenta2, 300);
+                System.out.printf("Transferencia exitosa. Saldo cuenta1: $%.2f, cuenta2: $%.2f%n",
+                        cuenta1.getBalance(), cuenta2.getBalance());
+            } catch (InsufficientBalanceException e) {
+                System.out.println("Error: " + e.getMessage());
+            }
 
-        try {
-            acc1.withdraw(100);
-        } catch (InsufficientBalanceException e) {
-            System.out.println(e.getMessage());
+            System.out.println("\n=== Manejo de Errores ===");
+
+            // TODO: multi-catch para monto invalido
+            try {
+                cuenta1.deposit(-100);
+            } catch (InvalidAmountException e) {
+                System.out.println("Error: " + e.getMessage());
+            }
+
+            // TODO: fondos insuficientes con deficit
+            try {
+                cuenta1.withdraw(999999);
+            } catch (InsufficientBalanceException e) {
+                System.out.printf("Error: %s (deficit: $%.2f)%n",
+                        e.getMessage(), e.getDeficit());
+            }
         }
-
-        acc1.transfer(acc2, 200);
-
-        acc1.transfer(acc2, 1000);
-
-        acc1.lock();
-        acc1.transfer(acc2, 50);
-
     }
 }

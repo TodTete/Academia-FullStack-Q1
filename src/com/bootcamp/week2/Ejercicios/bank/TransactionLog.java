@@ -1,17 +1,17 @@
 package com.bootcamp.week2.Ejercicios.bank;
 
-public class TransactionLog  implements AutoCloseable{
-
-    public TransactionLog(){
-        System.out.println("Transaction log opened.");
-    }
+public class TransactionLog implements AutoCloseable{
+    private boolean open = true;
 
     public void log(String message){
-        System.out.println("Transaction [LOG]: " + message);
+        if(!open) throw new IllegalStateException("Log cerrado");
+        System.out.println("[LOG] " + message);
     }
 
     @Override
-    public void close() {
-        System.out.println("Transaction log closed.");
+    public void close(){
+        //TODO: marcar como cerrado e imprimir mensaje
+        open = false;
+        System.out.println("[LOG] TransactionLog cerrado.");
     }
 }
