@@ -1,4 +1,4 @@
-package com.bootcamp.week2.Ejercicios.bank;
+package com.bootcamp.week2.Ejercicios.bank_1;
 
 public class Main {
         public static void main(String[] args){
