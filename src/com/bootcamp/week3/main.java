@@ -10,9 +10,6 @@ public class main {
 
     public static void main(String[] args) {
 
-
-
-
         /*List<String> companyNames = Arrays.asList(
                 "Google",
                 "Microsoft",
