@@ -1,20 +1,15 @@
 package com.bootcamp.week4;
 
-// el <T> es un tipo generico, se puede usar cualquier tipo de dato
-class Transaction<T>{
-    private T amount;
-
-    public Transaction(T amount) {
-        this.amount = amount;
-    }
-
-    public T getAmount() {
-        return amount;
-    }
-}
+import java.util.ArrayList;
 
 public class main {
     public static void main(String[] args) {
+        ArrayList list = new ArrayList();
+        list.add("Hello");
+        list.add("World");
+        list.add(123);
+        list.add(3.14);
 
+        list.forEach(System.out::println);
     }
 }
